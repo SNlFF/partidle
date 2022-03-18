@@ -18,6 +18,7 @@ import {
   REVEAL_TIME_MS,
   GAME_LOST_INFO_DELAY,
   WELCOME_INFO_MODAL_MS,
+  
 } from './constants/settings'
 import {
   isWordInWordList,
@@ -39,6 +40,7 @@ import './App.css'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
+import { TIMEOUT } from 'dns'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -149,9 +151,10 @@ function App() {
       const delayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
 
       showSuccessAlert(winMessage, {
-        delayMs,
-        onClose: () => setIsStatsModalOpen(true),
+        persist: true,
+        //onClose: () => setIsStatsModalOpen(true),
       })
+      setIsStatsModalOpen(true)
     }
 
     if (isGameLost) {

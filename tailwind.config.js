@@ -12,6 +12,8 @@ module.exports = {
         'ori-yellow-darkest':'#6a5b17',
         'darkBackground':'#121212',
         'hc-red-light':'#bd4747',
+        'hc-red-dark':'#9f3a3a',
+        'hc-red-darkest':'#7f2f2f',
       }
     },
   },
