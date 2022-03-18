@@ -1,7 +1,7 @@
 {
-  "homepage": "http://archidle.ernestlee.ca",
   "name": "game",
   "version": "0.1.0",
+  "homepage": "http://archidle.ernestlee.ca",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
