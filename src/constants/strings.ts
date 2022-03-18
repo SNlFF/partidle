@@ -1,4 +1,4 @@
-export const GAME_TITLE = 'ARCHIDLE'
+export const GAME_TITLE = '🐽ARCHIDLE'
 
 export const WIN_MESSAGES = [
   'So good !',
@@ -70,7 +70,7 @@ export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start !'
 export const HARD_MODE_DESCRIPTION =
   'Any hints presented must be used in subsequent attempts. Much like comments from crits.'
-export const HIGH_CONTRAST_MODE_DESCRIPTION = 'Original colour mode.'
+export const HIGH_CONTRAST_MODE_DESCRIPTION = 'Standard colours for the lame ones.'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `The word was ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
@@ -79,11 +79,11 @@ export const NOT_CONTAINED_MESSAGE = (letter: string) =>
   `Guess must contain ${letter}`
 export const ENTER_TEXT = 'ENTER'
 export const DELETE_TEXT = 'DELETE'
-export const STATISTICS_TITLE = 'Fluke History'
+export const STATISTICS_TITLE = 'FLUKE History'
 export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
 export const NEW_WORD_TEXT = 'New word in'
 export const SHARE_TEXT = 'Share'
-export const TOTAL_TRIES_TEXT = 'Total Attempts'
+export const TOTAL_TRIES_TEXT = 'Attempts'
 export const SUCCESS_RATE_TEXT = 'Luck Rate'
 export const CURRENT_STREAK_TEXT = 'Fluke Streak'
 export const BEST_STREAK_TEXT = 'Best Fluke'

@@ -27,7 +27,7 @@ export const SettingsModal = ({
   handleHighContrastMode,
 }: Props) => {
   return (
-    <BaseModal title="Settings" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="THE Configuration" isOpen={isOpen} handleClose={handleClose}>
       <div className="flex flex-col mt-2 divide-y">
         <SettingsToggle
           settingName="Hard Mode"
@@ -36,12 +36,13 @@ export const SettingsModal = ({
           description={HARD_MODE_DESCRIPTION}
         />
         <SettingsToggle
-          settingName="Dark Mode"
+          settingName="AutoCAD Mode"
           flag={isDarkMode}
           handleFlag={handleDarkMode}
+          description="Dark mode. Doesn't need explanation."
         />
         <SettingsToggle
-          settingName="High Contrast Mode"
+          settingName="Original Colour Mode"
           flag={isHighContrastMode}
           handleFlag={handleHighContrastMode}
           description={HIGH_CONTRAST_MODE_DESCRIPTION}

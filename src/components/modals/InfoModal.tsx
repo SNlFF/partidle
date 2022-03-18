@@ -8,64 +8,65 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+    <BaseModal title="THE Manual" isOpen={isOpen} handleClose={handleClose}>
+      <p className="mt-4 italic text-sm text-gray-500 dark:text-gray-300">
+        There is no time for critquing. Just Play.
+      </p>
+      <p className="mt-4 text-sm text-gray-500 dark:text-gray-300">
+        Guess the architecture related word in 6 tries. Colours of tiles reveal to represent
+        how good you actually are.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="D"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
+        <Cell value="O" />
         <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="I" />
+        <Cell value="C" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        D from doric is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="E" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="A"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="M" />
+        <Cell value="E" />
+        <Cell value="S" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        The letter A is in the word but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="B" />
+        <Cell isRevealing={true} isCompleted={true} value="A" status="absent" />
+        <Cell value="N" />
+        <Cell isRevealing={true} isCompleted={true} value="A" status="absent" />
+        <Cell value="L" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        The letter A is not in the word in any spot.
       </p>
-
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+      <p className="mt-4 italic text-sm text-gray-500 dark:text-gray-300">
+        {' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
-        </a>{' '}
+          Original Source Code
+        </a>
       </p>
     </BaseModal>
   )

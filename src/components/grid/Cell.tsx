@@ -32,14 +32,14 @@ export const Cell = ({
       'absent bg-neutral-500 dark:bg-neutral-700 text-white border-neutral-500 dark:border-neutral-700':
         status === 'absent',
       // For High Contrast Mode
-      'correct bg-hc-red-light text-white border-hc-red-light':
+      'present bg-ori-yellow-light text-white border-ori-yellow-light':
         status === 'correct' && isHighContrast,
-      'present bg-cyan-500 text-white border-cyan-500':
+      'correct bg-ori-green-light text-white border-ori-green-light':
         status === 'present' && isHighContrast,
       // Default Mode
-      'correct bg-ori-green-light text-white border-ori-green-light':
+      'correct bg-hc-red-light text-white border-hc-red-light':
         status === 'correct' && !isHighContrast,
-      'present bg-ori-yellow-light text-white border-ori-yellow-light':
+      'present bg-cyan-500 text-white border-cyan-500':
         status === 'present' && !isHighContrast,
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
