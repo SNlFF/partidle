@@ -10,6 +10,7 @@ import {
   NOT_ENOUGH_LETTERS_MESSAGE,
   WORD_NOT_FOUND_MESSAGE,
   CORRECT_WORD_MESSAGE,
+  LOSER_MESSAGE,
   HARD_MODE_ALERT_MESSAGE,
 } from './constants/strings'
 import {
@@ -78,7 +79,11 @@ function App() {
     }
     if (loaded.guesses.length === MAX_CHALLENGES && !gameWasWon) {
       setIsGameLost(true)
-      showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
+      const wordMessage = CORRECT_WORD_MESSAGE(solution)
+      const loserMessage =
+      LOSER_MESSAGE[Math.floor(Math.random() * LOSER_MESSAGE.length)]
+      const combine = loserMessage.concat(wordMessage)
+      showErrorAlert(combine, {
         persist: true,
       })
     }
@@ -237,7 +242,11 @@ function App() {
       if (guesses.length === MAX_CHALLENGES - 1) {
         setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         setIsGameLost(true)
-        showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
+        const wordMessage = CORRECT_WORD_MESSAGE(solution)
+        const loserMessage =
+        LOSER_MESSAGE[Math.floor(Math.random() * LOSER_MESSAGE.length)]
+        const combine = loserMessage.concat(wordMessage)
+        showErrorAlert(combine, {
           persist: true,
           delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
         })
