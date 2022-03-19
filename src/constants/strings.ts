@@ -19,7 +19,7 @@ export const WIN_MESSAGES = [
   '✓ I keep track of how many times you cursed at me.',
   '✓ You are ugly and you smell. Also, good job.',
   '✓ Can you still feel your fingers and toes?',
-  '✓ Yeah you got it! Are you going to frakking cry?',
+  '✓ Yeah you got it! Are you going to fucking cry?',
   '✓ So the loser decided to take the day off. How lucky.',
   '✓ Did you hack me?',
   '✓ I thought you were cursed.',
