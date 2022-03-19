@@ -194,7 +194,9 @@ function App() {
 
     if (!isWordInWordList(currentGuess)) {
       setCurrentRowClass('jiggle')
-      return showErrorAlert(WORD_NOT_FOUND_MESSAGE, {
+      const notFoundMessage =
+        WORD_NOT_FOUND_MESSAGE[Math.floor(Math.random() * WORD_NOT_FOUND_MESSAGE.length)]
+      return showErrorAlert(notFoundMessage, {
         onClose: clearCurrentRowClass,
       })
     }
@@ -250,7 +252,7 @@ function App() {
         setIsStatsModalOpen={setIsStatsModalOpen}
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
-      <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
+      <div className="pt-2 px-1 pb-20 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
         <div className="pb-6 grow">
           <Grid
             guesses={guesses}
@@ -258,7 +260,7 @@ function App() {
             isRevealing={isRevealing}
             currentRowClassName={currentRowClass}
           />
-        </div>
+        </div >
         <Keyboard
           onChar={onChar}
           onDelete={onDelete}

@@ -66,7 +66,39 @@ export const WIN_MESSAGES = [
 
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Missing letters..'
-export const WORD_NOT_FOUND_MESSAGE = 'Nice try. Since when was that in architecture?'
+export const WORD_NOT_FOUND_MESSAGE = [
+  'Nice Try. That word is not in architecture.',
+  'Stop cheating. That word is not in architecture.',
+  'That is not architecture.',
+  'Architecture only.',
+  'Am I a joke to you? This is (ARCHI)-dle',
+  'Did you read the rules? Clearly not.',
+  'I can deny you all day. Architecture words only.',
+  'Listen up. Use what you learned in Architecture.',
+  'Stupid user. Arcitecture words only.',
+  'I cannot improve your architecture vocabularly. But if that is all you know, switch to W*rdle',
+  'Try harder.',
+  'This is easy, tryharder.',
+  'Seriously, do you not like architecture? I do not blame you.',
+  'Denied. Try again dumb dumb.',
+  'At this rate you will never finish.',
+  'Wake up please. This is Archidle',
+  'Do not take my rules for granite. Read them.',
+  'OSNAP. I caught a cheater.',
+  'You just do not stop do you? This is Archidle',
+  'Archidle is my name. Not W*rdle',
+  'I am jiggling because you have not read the rules.',
+  'Gotta try harder than that',
+  'This is easier than studio. Try harder',
+  'Using words not in architecture. Have you given up already?',
+  'That word is unrelated. Just like my real engineering job and yours.',
+  'Given up already? What has architecture taught you?',
+  'Dumbo or dumb? Maybe both.',
+  'Do I need to kill you and dump you in the river to make you in stream with architectural jargon?',
+  'At least attempt with architectural jargon.',
+  'You are playing Archidle, not W*rdle',
+  'Sorry to admit, is that all you know?'
+];
 export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start !'
 export const HARD_MODE_DESCRIPTION =

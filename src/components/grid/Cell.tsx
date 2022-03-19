@@ -32,9 +32,9 @@ export const Cell = ({
       'absent bg-neutral-500 dark:bg-neutral-700 text-white border-neutral-500 dark:border-neutral-700':
         status === 'absent',
       // For High Contrast Mode
-      'present bg-ori-yellow-light text-white border-ori-yellow-light':
-        status === 'correct' && isHighContrast,
       'correct bg-ori-green-light text-white border-ori-green-light':
+        status === 'correct' && isHighContrast,
+      'present bg-ori-yellow-light text-white border-ori-yellow-light':
         status === 'present' && isHighContrast,
       // Default Mode
       'present bg-cyan-500 text-white border-cyan-500':
@@ -54,3 +54,4 @@ export const Cell = ({
     </div>
   )
 }
+ 
