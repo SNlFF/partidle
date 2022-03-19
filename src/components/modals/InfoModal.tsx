@@ -62,10 +62,10 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="mt-4 italic text-sm text-neutral-500 dark:text-neutral-300">
         {' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
-          className="font-bold"
+          href="https://github.com/SNlFF/partidle"
+          className="font-bold focus:outline-none"
         >
-          Archidle Source Code
+          View Archidle Source Code
         </a>
       </p>
     </BaseModal>
