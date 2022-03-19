@@ -50,6 +50,7 @@ export const WIN_MESSAGES = [
   '✓ 404 error. This is an illusion.',
   '✓ 404 error. This is not real.',
   '✓ Good job. Now bye.',
+  '✓ A rose by any other name would smell as sweet.',
   '✓ Nice. But you are not a genius, you kept dreaming of me last night.',
   '✓ Nice. Do you ever wish you were uhhhhhhh...',
   '✓ Archidle > Rome',
@@ -99,12 +100,103 @@ export const WORD_NOT_FOUND_MESSAGE = [
   'You are playing Archidle, not W*rdle',
   'Sorry to admit, is that all you know?'
 ];
+export const LOSER_MESSAGE = [
+  'What a loser. ',
+  'Now is the perfect time to go outside and question your mistakes. ',
+  'You were so bad, I questioned if I should block you. ',
+  'That was brutal. Just like your final project. ',
+  'I am sorry but, did you not study architecture? ',
+  'Tell me. Why are you so bad? ernestlee.ca/feedback.com ',
+  'Ok. Ok. Ok. You need help. ',
+  'Your ratio is looking pretty bad. ',
+  'Seriously??? ',
+  'Is it time to switch to real engineering? ',
+  'Today marks the beginning of the end of your career. ',
+  'I do not take resposibility for your mistakes. ',
+  'I demand you to share this. What a train wreck. ',
+  'At least you are good with colours. ',
+  'You are lucky architects only draw. ',
+  'Time to pack your bags. It is over. ',
+  'This is your mistake. Not mine. Period. ',
+  'Is it raining outside? I hope you drown. ',
+  'If only you tried. ',
+  'Bye loser. ',
+  'If only you were a real architect. ',
+  'Frustrated? You should be. ',
+  'When was the last time you got something right? Just a question... but you must answer. ',
+  'Loser detected. ',
+  'Maybe cheating is the only solution for you. ',
+  'Ok. Just admit it. You suck. ',
+  'How did you get in this field? ',
+  'Maybe you should have stuck with civil. ',
+  'Please do not apply the same effort on your designs. ',
+  'Are you always like this? ',
+  'Wow! Another failure. ',
+  'Do not worry about it. Worry about yourself. ',
+  'Welcome to the losing group. ',
+  'I am blame you for all of this. ',
+  'How do you even recover from this? ',
+  'You had to choose this route didnt you? ',
+  'Try again tomorrow. ',
+  'Haha.. hahahahahhaha. HAH. ',
+  'Congratulations to not cheating for the first time. ',
+  'Thats was rough. Was it not? ',
+  'No excuses this time pls. ',
+  'Everyone go it. But you are an exception. ',
+  'Time to spill the beans... ',
+  'When was the last time you did something well. ',
+  'I hope this does not reflect your design ability. ',
+  'you wish there were 7 tries right? Same with everything else in your life. ',
+  'I win. You lose. What is new? ',
+  'Stop the profanity pls. ',
+  'I suggest you cheat next time. ',
+  'Please turn on snapping for the next round. ',
+  'This is what I call a score to share :) ',
+  ':) loser. ',
+  'Are you always like this? ',
+  'I never run out of things to say. But when you started playing ... ',
+  'Wow. Such wow. Wish you all the best. You need it. ',
+  'Know any architects? I suggest you column. ',
+  'Multiplying your scor by 2 times for a boost. Oh, but it is a zero. ',
+  'Just think of all the things you can do with a performance like this. ',
+  'I never say this. But congratulations ! ',
+  'Boolean difference is not always the answer. ',
+  'You are still using AutoCad? ',
+  'Do you even draft? ',
+  'lmao ',
+  'Truss the books next time. Not yourself. ',
+  'As a punishment, model me an irregular spiral staircase in rhino. Make that three. ',
+  'Welcome to the club. You have no shortage of members here. ',
+  'What is architecture to you? ',
+  'So. What now? ',
+  ':] ',
+  'OMG. We found another one. ',
+  'Stop wasting my bandwidth. ',
+  'Do you regret playing? ',
+  'You should cheat. It is the only way. ',
+  'Ask a friend next time. Might help. ',
+  'I only spit out facts. ',
+  'We are lucky not all architects are like you. ',
+  'Do not be so political next time around. ',
+  'I was going to help you, but was even too overkill for me. ',
+  'Wait a couple years. You will get better. ',
+  'Come back when you know what you are doing. ',
+  'I will not laugh at you. ',
+  'Okay. When was the last time you updated anything? ',
+  'At least you are good at designing. ',
+  'Sheeeesh. ',
+  'Refreshing will not help you. ',
+  'Time to learn soemthing new. ',
+  'I give up with you. ',
+  'Maybe think of architecture next time. ',
+  'Hope i do not give you nightmares. ',
+];
 export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start !'
 export const HARD_MODE_DESCRIPTION =
   'Any hints presented must be used in subsequent attempts. Much like comments from crits.'
 export const HIGH_CONTRAST_MODE_DESCRIPTION = 'Standard colours for the lame ones.'
-export const CORRECT_WORD_MESSAGE = (solution: string) =>
+export const CORRECT_WORD_MESSAGE = (solution: string) => 
   `The word was ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
   `Must use ${guess} in position ${position}`
@@ -112,11 +204,11 @@ export const NOT_CONTAINED_MESSAGE = (letter: string) =>
   `Guess must contain ${letter}`
 export const ENTER_TEXT = 'ENTER'
 export const DELETE_TEXT = 'DELETE'
-export const STATISTICS_TITLE = 'FLUKE History'
-export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
+export const STATISTICS_TITLE = 'ARCHITECTURAL Career'
+export const GUESS_DISTRIBUTION_TEXT = 'Distribution'
 export const NEW_WORD_TEXT = 'New word in'
 export const SHARE_TEXT = 'Share'
 export const TOTAL_TRIES_TEXT = 'Attempts'
-export const SUCCESS_RATE_TEXT = 'Luck Rate'
+export const SUCCESS_RATE_TEXT = 'Success'
 export const CURRENT_STREAK_TEXT = 'Fluke Streak'
 export const BEST_STREAK_TEXT = 'Best Fluke'
