@@ -1,6 +1,6 @@
 import { getGuessStatuses } from './statuses'
 import { solutionIndex, unicodeSplit } from './words'
-import { GAME_TITLE } from '../constants/strings'
+//import { GAME_TITLE } from '../constants/strings'
 import { MAX_CHALLENGES } from '../constants/settings'
 import { UAParser } from 'ua-parser-js'
 
@@ -18,7 +18,7 @@ export const shareStatus = (
   handleShareToClipboard: () => void
 ) => {
   const textToShare =
-    `${GAME_TITLE} ${solutionIndex} ${
+    `Archidle ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
     generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
@@ -77,8 +77,8 @@ const attemptShare = (shareData: object) => {
 
 const getEmojiTiles = (isDarkMode: boolean, isHighContrastMode: boolean) => {
   let tiles: string[] = []
-  tiles.push(isHighContrastMode ? '🟧' : '🟩')
-  tiles.push(isHighContrastMode ? '🟦' : '🟨')
+  tiles.push(isHighContrastMode ? '🟩' : '🟦')
+  tiles.push(isHighContrastMode ? '🟨' : '🟥')
   tiles.push(isDarkMode ? '⬛' : '⬜')
   return tiles
 }
