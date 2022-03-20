@@ -224,6 +224,7 @@ export const VALID_GUESSES = [
   'roads',
   'chart',
   'scene',
+  'index',
   'graph',
   'guide',
   'winds',

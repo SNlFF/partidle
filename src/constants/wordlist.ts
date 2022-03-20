@@ -20,6 +20,7 @@ export const WORDS = [
   'rivet',
   'hinge',
   'tread',
+  'index',
   'aisle',
   'stair',
   'bikes',
