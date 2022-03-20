@@ -1,4 +1,4 @@
-export const GAME_TITLE = '🐽ARCHIDLE'
+export const GAME_TITLE = 'Archidle'
 
 export const WIN_MESSAGES = [
   '✓ So good !',
