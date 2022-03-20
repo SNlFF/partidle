@@ -76,7 +76,7 @@ export const StatsModal = ({
           </div>
           <button
             type="button"
-            className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-hc-red-light text-base font-medium text-white hover:bg-hc-red-dark focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-neutral-400 sm:text-sm"
+            className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-ori-green-light text-base font-medium text-white hover:bg-ori-green-dark focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-neutral-400 sm:text-sm"
             onClick={() => {
               shareStatus(
                 guesses,
