@@ -13,8 +13,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         There is no time for critquing. Just Play.
       </p>
       <p className="mt-4 text-sm text-neutral-500 dark:text-neutral-300">
-        Guess the architecture related word in 6 tries. Colours of tiles reveal to represent
-        how good you actually are.
+        Guess the architecture related word in 6 tries. Colours of tiles reveal.
+        as hints.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -57,15 +57,15 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="L" />
       </div>
       <p className="text-sm text-neutral-500 dark:text-neutral-300">
-        The letter A is not in the word in any spot.
+        The letter A is not in the word or in any spot.
       </p>
-      <p className="mt-4 italic text-sm text-neutral-500 dark:text-neutral-300">
+      <p className="mt-4 italic text-xs text-neutral-500 dark:text-neutral-400">
         {' '}
         <a
-          href="https://github.com/SNlFF/partidle"
+          href="https://github.com/cwackerfuss/react-wordle"
           className="font-bold focus:outline-none"
         >
-          View Archidle Source Code
+          original code
         </a>
       </p>
     </BaseModal>
