@@ -1,7 +1,7 @@
 import {
   ChartBarIcon,
   CogIcon,
-  InformationCircleIcon,
+  QuestionMarkCircleIcon,
   SpeakerphoneIcon,
 } from '@heroicons/react/outline'
 import { GAME_TITLE } from '../../constants/strings'
@@ -23,7 +23,7 @@ export const Navbar = ({
     <div className="navbar">
       <div className="navbar-content px-5">
         <div className="right-icons">
-          <InformationCircleIcon
+          <QuestionMarkCircleIcon
             className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
             onClick={() => setIsInfoModalOpen(true)}
           />
